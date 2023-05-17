@@ -1,4 +1,4 @@
-# Purple Studio Hair Salon
+# NAIL ART BY MUSKAN
 
 Stream One Project: User-Centric Frontend Development - Code Institute
 
