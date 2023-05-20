@@ -124,8 +124,8 @@
         </div>
 
 
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbxAMDEMT__vdbeeQirJ8XN7qz04ZUbliUT2KTtZzbuLlRZJXxeN1L_PMYEUkCt2Upx6/exec'
+       <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzFOasL0oN5334f2ib7QtcNe4vWxQuvpgebKQKujLLAewTxczRsWmhkaBeqjVYRIb6U/exec'
             const form = document.forms['submit-to-google-sheet']
             const success = document.getElementById('success');
             form.addEventListener('submit', e => {
@@ -137,6 +137,11 @@
 
                 .then(response => {
                         success.innerHTML = "data successfully submitted";
+
+                        setTimeout(function() {
+                            success.innerHTML = "";
+                        }, 5000)
+                        form.reset();
                     })
                     .catch(error => console.error('Error!', error.message))
             })
